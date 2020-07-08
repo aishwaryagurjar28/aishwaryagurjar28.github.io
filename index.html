@@ -5,7 +5,13 @@
     <style>
     body {
       font-family: 'Lato', sans-serif;
-      background-image:url(lastbg1.jpg);
+      background-image: url(lastbg1.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+     max-width: 100%;
+     height: auto;
     }
     
     .overlay {
@@ -49,30 +55,6 @@
       right: 45px;
       font-size: 60px;
     }
-    
-    @media all and (max-width: 200px) {
-      .overlay a {font-size: 20px}
-      .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-      }
-      p{
-        margin-top: 60px;
-        margin-left: 5px;
-        font-size: 5px;
-        font-family: 'Times New Roman', Times, serif;
-        color: black;
-    }
-    h1{
-        margin-left: 5px;
-        font-size: 5px;
-    }
-    summary{
-      font-size: 30px;
-      font-family: 'Times New Roman', Times, serif;
-    }
-    }
     p{
         margin-top: 60px;
         margin-left: 200px;
@@ -88,6 +70,19 @@
       font-size: 30px;
       font-family: 'Times New Roman', Times, serif;
     }
+        
+    @media  only screen and (max-width: 768px) {
+     [class*]=".overlay a" {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+      body{
+      background-image: url(lastbg1.jpg);}
+      
+    }
+    
     </style>
     </head>
     <body>
